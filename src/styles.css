@@ -1,1 +1,30 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@source "./**/*.{html,ts}";
+
+@theme {
+  /* Colors */
+  --color-background: #F4F4F5;
+  --color-surface: #FFFFFF;
+  --color-primary: #E4002B;
+  --color-text-dark: #343A40;
+  --color-img-placeholder: #C4C4C4;
+
+  /* Typography */
+  --font-sans: 'Inter', sans-serif;
+
+  --text-body: 1rem;
+  --text-body--line-height: 1.5rem;
+
+  --text-heading-card: 1.5rem;
+  --text-heading-card--line-height: 1.75rem;
+
+  /* Gradients */
+  --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+  /* Shadows */
+  --shadow-card: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+
+  /* Max width */
+  --width-container: 96.375rem;
+}
