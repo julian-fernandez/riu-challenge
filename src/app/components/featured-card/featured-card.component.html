@@ -1,5 +1,5 @@
 <section class="bg-background py-8 px-5 md:py-12 md:px-8 lg:py-24" aria-label="Featured article">
-  <div class="w-full max-w-(--width-container) mx-auto">
+  <div class="w-full max-w-container mx-auto">
     <article class="bg-surface shadow-card rounded-lg flex flex-col gap-8 p-8 lg:flex-row lg:gap-6">
 
       <figure class="m-0 rounded-lg overflow-hidden aspect-video lg:aspect-auto lg:w-1/2 lg:shrink-0">
@@ -16,10 +16,12 @@
           <span>Lorem ipsum dolor sit amet.</span>
         </p>
 
-        <!--
-          Going back on previous decision: using <h2> as tis is a specific article title, not the primary page heading.
-          The page <h1> lives in the article grid section, which is semantically more important and physically larger.
-          <h1> was considered here given the visual prominence of this card, but heading hierarchy takes precedence over visual weight.
+         <!--
+          Using <h2> here is a known tradeoff: this card renders before the article grid section in the DOM,
+          so a screen reader navigating by headings will encounter this <h2> before the page's <h1>.
+          I decided against the alternative (making this <h1>) because the article grid is the primary page content
+          and its heading is the more semantically significant one. 
+          In a production context, this would be worth raising with the design team.
         -->
         <h2 class="text-heading-card font-bold text-text-dark leading-7">
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit

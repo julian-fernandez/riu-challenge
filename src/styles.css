@@ -47,7 +47,7 @@
   --shadow-card: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
 
   /* Max width */
-  --width-container: 1542px;
+  --max-width-container: 1542px;
 
   /*
    * Carousel card width — fixed at the Figma spec value for each breakpoint. Carousels
