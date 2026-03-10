@@ -23,11 +23,14 @@
       <span>Lorem ipsum dolor sit amet.</span>
     </p>
 
-    <!-- h3: third level in the page hierarchy — h1 (section title) > h2 (featured article) > h3 (grid cards) -->
-    <!-- leading-9.5 reads weird but it's 38px in md, as per spec-->
-    <h3 class="text-heading-article font-bold text-black md:text-heading-article-lg md:leading-9.5">
+    <!--
+     This used to be h3 but that was faulty logic. Now it's h2 because each <article> card is a 
+     sectioning element subordinate to the grid section's <h1>, so the first heading within it is correctly h2 — not h3. 
+     Purely semantic change, no visual difference.
+      -->
+    <h2 class="text-heading-article font-bold text-black md:text-heading-article-lg md:leading-9.5">
       Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
-    </h3>
+    </h2>
 
     <p class="text-body text-text-dark line-clamp-6">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
