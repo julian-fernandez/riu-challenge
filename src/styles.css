@@ -16,8 +16,20 @@
   --text-body: 1rem;
   --text-body--line-height: 1.5rem;
 
+  --text-subtitle: 1.125rem;
+  /* 27px ÷ 16 = 1.6875rem — faithful Figma conversion; px could be used to avoid the odd multiple */
+  --text-subtitle--line-height: 1.6875rem;
+
   --text-heading-card: 1.5rem;
   --text-heading-card--line-height: 1.75rem;
+
+  --text-heading-section: 1.875rem;
+  --text-heading-section--line-height: 2rem;
+
+  /* 23px ÷ 16 = 1.4375rem — faithful Figma conversion; px could be used to avoid the odd multiple */
+  --text-heading-article: 1.4375rem;
+  /* 25px ÷ 16 = 1.5625rem — faithful Figma conversion; px could be used to avoid the odd multiple */
+  --text-heading-article--line-height: 1.5625rem;
 
   /* Gradients */
   --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);

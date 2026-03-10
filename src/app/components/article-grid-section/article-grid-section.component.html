@@ -1,0 +1,41 @@
+<!-- I believe this should own its own grid layout so I'm choosing not to extract the grid out into its own component, as it's mostly just a styleful wrapper -->
+<section class="py-8 px-5 md:py-12 md:px-8 lg:py-24" aria-labelledby="articles-heading">
+  <div class="w-full max-w-(--width-container) mx-auto flex flex-col gap-12">
+
+    <div class="flex flex-col gap-6">
+      <!--
+        <h1>: this is the primary page heading — both the largest (30px) and semantically
+        most significant title on the page. The featured card title below is <h2> as it
+        describes a specific article, not the page itself.
+      -->
+      <h1 id="articles-heading" class="text-heading-section font-bold leading-8 text-black">
+        Lorem ipsum dolor sit amet
+      </h1>
+
+      <div class="flex flex-col gap-2.5">
+        <p class="text-subtitle text-text-dark">
+          Lorem ipsum dolor sit
+        </p>
+
+        <div class="flex items-center gap-4 h-10 px-4 rounded-lg bg-background">
+          <img src="icons/Minimalistic Magnifer.png" alt="" aria-hidden="true" class="w-4 h-4 shrink-0">
+          <input
+            type="search"
+            class="flex-1 bg-transparent text-body text-text-dark outline-none placeholder:text-text-dark/50"
+            aria-label="Search articles"
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <app-article-card />
+      <app-article-card />
+      <app-article-card />
+      <app-article-card />
+      <app-article-card />
+      <app-article-card />
+    </div>
+
+  </div>
+</section>
