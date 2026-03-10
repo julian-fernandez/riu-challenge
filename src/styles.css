@@ -26,10 +26,19 @@
   --text-heading-section: 1.875rem;
   --text-heading-section--line-height: 2rem;
 
+  /* 48px / 58px — tablet and desktop size for the section h1 */
+  --text-heading-section-lg: 3rem;
+  --text-heading-section-lg--line-height: 3.625rem;
+
   /* 23px ÷ 16 = 1.4375rem — faithful Figma conversion; px could be used to avoid the odd multiple */
   --text-heading-article: 1.4375rem;
   /* 25px ÷ 16 = 1.5625rem — faithful Figma conversion; px could be used to avoid the odd multiple */
   --text-heading-article--line-height: 1.5625rem;
+
+  /* 30px / 38px — tablet and desktop size for article card h3 */
+  --text-heading-article-lg: 1.875rem;
+  /* 38px ÷ 16 = 2.375rem — faithful Figma conversion */
+  --text-heading-article-lg--line-height: 2.375rem;
 
   /* Gradients */
   --gradient-overlay: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);

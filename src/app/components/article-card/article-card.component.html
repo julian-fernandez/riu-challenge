@@ -1,1 +1,28 @@
-<p>article-card works!</p>
+<article class="flex flex-col gap-4">
+  <figure class="m-0 rounded-lg overflow-hidden aspect-video">
+    <img
+      src="assets/placeholder.png"
+      alt="Article image"
+      class="block w-full h-full object-cover"
+    >
+  </figure>
+
+  <div class="flex flex-col gap-4">
+    <p class="flex items-center gap-2 text-body font-bold text-text-dark">
+      <img src="icons/Calendar.png" alt="" aria-hidden="true" class="w-6 h-6">
+      <span>Lorem ipsum dolor sit amet.</span>
+    </p>
+
+    <!-- h3: third level in the page hierarchy — h1 (section title) > h2 (featured article) > h3 (grid cards) -->
+    <h3 class="text-heading-article font-bold text-black md:text-heading-article-lg md:leading-[2.375rem]">
+      Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+    </h3>
+
+    <p class="text-body text-text-dark line-clamp-6">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.
+      Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae
+      mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu.
+      Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
+    </p>
+  </div>
+</article>
