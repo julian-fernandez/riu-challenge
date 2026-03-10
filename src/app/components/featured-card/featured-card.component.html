@@ -1,1 +1,41 @@
-<p>featured-card works!</p>
+<section class="bg-background py-8 px-5 md:py-12 md:px-8 lg:py-24" aria-label="Featured article">
+  <div class="w-full max-w-(--width-container) mx-auto">
+    <article class="bg-surface shadow-card rounded-lg flex flex-col gap-8 p-8 lg:flex-row lg:gap-6">
+
+      <figure class="m-0 rounded-lg overflow-hidden aspect-video lg:aspect-auto lg:w-1/2 lg:shrink-0">
+        <img
+          src="assets/placeholder.png"
+          alt="Featured article image"
+          class="block w-full h-full object-cover"
+        >
+      </figure>
+
+      <div class="flex flex-col gap-4 lg:flex-1">
+        <p class="flex items-center gap-2 text-body font-bold text-text-dark">
+          <img src="icons/Calendar.png" alt="" aria-hidden="true" class="w-6 h-6">
+          <span>Lorem ipsum dolor sit amet.</span>
+        </p>
+
+        <!--
+          Using <h1> here for semantic and SEO reasons: this is the most prominent title on the page.
+          <h2> would also be valid if a higher-level heading existed above this component,
+          but in a single-page layout with no prior <h1>, this title carries that role.
+        -->
+        <h1 class="text-heading-card font-bold text-text-dark leading-7">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit
+        </h1>
+
+        <p class="text-body text-text-dark">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna.        </p>
+
+        <div class="flex justify-end mt-auto">
+          <a href="#" class="bg-primary text-surface h-10 px-2 rounded-lg flex items-center text-body font-bold">
+            Lorem ipsum.
+          </a>
+        </div>
+      </div>
+
+    </article>
+  </div>
+</section>
