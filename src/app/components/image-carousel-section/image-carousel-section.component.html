@@ -1,1 +1,38 @@
-<p>image-carousel-section works!</p>
+<footer aria-labelledby="carousel-heading" class="py-8 px-5 md:py-12 md:px-8 lg:py-24">
+  <div class="w-full max-w-(--width-container) mx-auto flex flex-col gap-12">
+
+    <div class="flex flex-col gap-6">
+      <h2 id="carousel-heading" class="text-heading-section font-bold leading-8 text-black md:text-heading-section-lg md:leading-14.5">
+        Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
+      </h2>
+      <p class="text-body text-text-dark">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit
+        urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris.
+        Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non
+        suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit
+        amet. Pellentesque commodo lacus at sodales sodales. Quisque sagittis orci ut diam
+        condimentum, vel euismod erat placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+      </p>
+    </div>
+
+    <ul
+      class="carousel-track flex gap-8 overflow-x-auto snap-x snap-mandatory lg:overflow-x-clip"
+      role="list"
+      aria-label="Image carousel"
+    >
+      <li class="w-carousel-card md:w-carousel-card-md shrink-0 snap-start lg:flex-1 lg:w-auto">
+        <app-image-carousel-card />
+      </li>
+      <li class="w-carousel-card md:w-carousel-card-md shrink-0 snap-start lg:flex-1 lg:w-auto">
+        <app-image-carousel-card />
+      </li>
+      <li class="w-carousel-card md:w-carousel-card-md shrink-0 snap-start lg:flex-1 lg:w-auto">
+        <app-image-carousel-card />
+      </li>
+      <li class="w-carousel-card md:w-carousel-card-md shrink-0 snap-start lg:flex-1 lg:w-auto">
+        <app-image-carousel-card />
+      </li>
+    </ul>
+
+  </div>
+</footer>
