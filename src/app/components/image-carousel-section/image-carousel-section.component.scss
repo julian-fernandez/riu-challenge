@@ -1,5 +1,7 @@
 /*
- * Hide the native scrollbar on the carousel track
+ * Hide the native scrollbar on the carousel track.
+ Native tailwind classes can do this for IE/Edge with -ms-overflow-style: none;
+ but not for Chrome/Safari because it needs the pseudoelement.
  */
 .carousel-track {
   scrollbar-width: none;        /* Firefox */

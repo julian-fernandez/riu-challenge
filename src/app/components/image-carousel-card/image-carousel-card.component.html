@@ -1,4 +1,14 @@
-<article class="relative w-full aspect-3/4 rounded-lg overflow-hidden">
+<!--
+  tabindex="0" puts the card itself in the tab order before the download link,
+  so keyboard users can land on the card and read its content before tabbing
+  to the interactive element. Ring gets clipped by the overflow-hidden, which is why
+  I'm using outline.
+  focus-visible ensures the ring only appears for keyboard navigation, not mouse clicks.
+-->
+<article
+  tabindex="0"
+  class="relative w-full aspect-3/4 rounded-lg overflow-hidden focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+>
 
   <img
     src="assets/placeholder.png"
@@ -8,7 +18,7 @@
 
   <!--
     Gradient overlay: content-driven height (no fixed value)
-    naturally produce the right visual. TO ASK: would we prefer fixed height?
+    naturally produce the right visual in theory. TO ASK: would we prefer fixed height?
     Or maybe it's better to let the content dictate the height?
     Maybe it depends on whether we truncate the text or not.
   -->
@@ -27,6 +37,7 @@
       The figma says this frame is 49px high (73px in md) but pt-6 (pt-12 in md)
       shakes out to 48px (72px in md).
       So I'm making an executive decision to be fine with being 1px off.
+      In a real work environment I'd just ask the design team.
     -->
     <a href="#" class="pt-6 md:pt-12 flex items-center gap-1 text-body font-bold text-white">
       Lorem ipsum

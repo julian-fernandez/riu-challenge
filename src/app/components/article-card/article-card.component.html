@@ -1,3 +1,13 @@
+<!--
+  Since this is a placeholder component, the actual article URLs don't exist.
+  Screen reader users can reach the content via browse-by-landmark
+  mode. Tab navigation of cards should resolve naturally once a link
+  is added (wrapping the card or a "read more" anchor or whatever)
+
+  Also: after:absolute after:inset-0 would be the best practice for accessible links,
+  as it would cover the whole card while still letting screen readers only see the
+  title as the link label.
+-->
 <article class="flex flex-col gap-4">
   <figure class="m-0 rounded-lg overflow-hidden aspect-video">
     <img
@@ -14,7 +24,8 @@
     </p>
 
     <!-- h3: third level in the page hierarchy — h1 (section title) > h2 (featured article) > h3 (grid cards) -->
-    <h3 class="text-heading-article font-bold text-black md:text-heading-article-lg md:leading-[2.375rem]">
+    <!-- leading-9.5 reads weird but it's 38px in md, as per spec-->
+    <h3 class="text-heading-article font-bold text-black md:text-heading-article-lg md:leading-9.5">
       Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
     </h3>
 
